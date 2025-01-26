@@ -456,7 +456,17 @@ function mensDia(){
 // Obtener el elemento donde se insertará el poema
 const poemaElement = document.getElementById('poema');
 
-const poema = `Tu amor es como un sol brillante,<br>que ilumina mi vida y me da paz,<br>tus palabras son la melodía,<br>que en mi corazón siempre sonarán.`;
+const poema = `En el rincón del ayer,
+donde el tiempo quiso arder,
+viven tus ojos serenos,
+y tus suspiros eternos.
+
+Eres un eco en mi mente,
+un latido persistente.
+Aunque el tiempo nos desate,
+en mi alma siempre late.
+
+`;
 
 // Verificar si el contenedor existe
     if (poemaElement) {
