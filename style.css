@@ -140,7 +140,7 @@ p {
 
 /* Contenedor Poema para ti */
 .poema-container {
-    position: absolute;
+    position: relative;
     top: 30%;
     left: 20px;
     transform: translateY(-50%);
