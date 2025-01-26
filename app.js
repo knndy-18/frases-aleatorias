@@ -2,7 +2,7 @@
 const emotionSelect = document.getElementById('emotionSelect');
 const generateMessageBtn = document.getElementById('generateMessage');
 const messageOutput = document.getElementById('messageOutput');
-const newMessageBtn = document.getElementById('newMessage');
+
 const animationsContainer = document.querySelector('.animations-container');
 
 // Listas de mensajes con emojis y animaciones
@@ -439,8 +439,7 @@ function generateMessage() {
     // Mostrar el mensaje en el área correspondiente
     messageOutput.textContent = randomMessage.text;
 
-    // Mostrar el botón "Otro mensaje"
-    newMessageBtn.classList.remove('hidden');
+  
 }
 function mensDia(){
     let mensaje = document.getElementById('mensajeDia').value;
@@ -453,16 +452,14 @@ function mensDia(){
     // Mostrar el mensaje en el área correspondiente
     messageOutput.textContent = random.text;
 
-    // Mostrar el botón "Otro mensaje"
-    newMessageBtn.classList.remove('hidden');
+  
 
 }
 
 // Evento para generar mensaje
 generateMessageBtn.addEventListener('click', generateMessage);
 
-// Evento para otro mensaje
-newMessageBtn.addEventListener('click', generateMessage);
+
 
 //mostrar el poema
 // Definir el poema
