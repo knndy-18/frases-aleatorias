@@ -466,7 +466,15 @@ newMessageBtn.addEventListener('click', generateMessage);
 
 //mostrar el poema
 // Definir el poema
-const poema = `Tu amor es como un sol brillante,que ilumina mi vida y me da paz,tus palabras son la melodía,que en mi corazón siempre sonarán.`;
+const poema = `En el rincón del ayer,
+donde el tiempo quiso arder,
+viven tus ojos serenos,
+y tus suspiros eternos.
+
+Eres un eco en mi mente,
+un latido persistente.
+Aunque el tiempo nos desate,
+en mi alma siempre late.`;
 
 // Obtener el elemento donde se insertará el poema
 const poemaElement = document.getElementById('poema');
