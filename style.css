@@ -57,7 +57,7 @@ p {
     background-color: #c2185b;
     border: none;
     border-radius: 15px;
-    cursor: pointer;
+    cursor:pointer;
     margin-top: 10px;
 }
 
@@ -140,15 +140,15 @@ p {
 
 /* Contenedor Poema para ti */
 .poema-container {
-    width: 100%;
-    max-width: 600px; /* Limitar el tamaño del contenedor */
-    margin: 20px auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 220px;
     font-size: 1.1rem;
     color: #333;
+    margin: 0 auto;
+    position: relative;
 }
 
 .poema-container h2 {
@@ -166,52 +166,41 @@ p {
 
 /* Media Queries */
 
-/* Responsividad para pantallas pequeñas y móviles */
-@media screen and (max-width: 768px) {
-    .container {
-        max-width: 90%;
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .music-container {
+        width: 90%; /* Ajusta el ancho en pantallas pequeñas */
+        padding: 15px;
     }
 
-    h1 {
-        font-size: 2rem;
+    .music-container h3 {
+        font-size: 1.6rem;
     }
 
-    p {
+    .music-container ul li {
         font-size: 1rem;
     }
 
-    .survey select, .survey button, .dia button {
+    /* Poema para ti en pantallas pequeñas */
+    .poema-container {
+        width: 90%; /* Ajustamos para que ocupe más espacio en pantallas pequeñas */
+        margin-top: 20px;
+    }
+
+    /* Ajuste de fuente en pantalla pequeña */
+    .poema-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .poema-container p {
         font-size: 0.9rem;
     }
-
-    .message-area {
-        padding: 15px;
-    }
-
-    .poema-container {
-        width: 100%; /* Ajustar al ancho completo */
-        margin: 20px auto; /* Centrar el contenedor */
-        padding: 15px;
-    }
 }
 
-/* Ajustes para pantallas horizontales de móvil */
-@media screen and (max-width: 768px) and (orientation: landscape) {
-    .container {
-        max-width: 95%;
-    }
-
-    .poema-container {
-        width: 100%;
-        margin: 20px auto;
-        padding: 15px;
-    }
-}
-
-/* Ajustes para tabletas */
+/* Pantallas pequeñas (móviles en horizontal) */
 @media screen and (max-width: 1024px) {
     .container {
-        max-width: 80%;
+        max-width: 90%;
     }
 
     h1 {
@@ -222,9 +211,23 @@ p {
         font-size: 1rem;
     }
 
+    .message-area {
+        padding: 15px;
+    }
+
+    /* Poema debajo de la encuesta */
     .poema-container {
-        width: 100%; /* Ancho completo */
-        margin: 20px auto; /* Centrado */
-        padding: 20px;
+        position: relative;
+        width: 90%;
+        left: 0;
+        transform: none;
+        margin-top: 20px;
+    }
+}
+
+/* Pantallas medianas (tabletas) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .poema-container {
+        width: 250px; /* Ajustamos el ancho del contenedor */
     }
 }
