@@ -2,7 +2,6 @@
 const emotionSelect = document.getElementById('emotionSelect');
 const generateMessageBtn = document.getElementById('generateMessage');
 const messageOutput = document.getElementById('messageOutput');
-
 const animationsContainer = document.querySelector('.animations-container');
 
 // Listas de mensajes con emojis y animaciones
@@ -439,7 +438,6 @@ function generateMessage() {
     // Mostrar el mensaje en el área correspondiente
     messageOutput.textContent = randomMessage.text;
 
-  
 }
 function mensDia(){
     let mensaje = document.getElementById('mensajeDia').value;
@@ -459,22 +457,18 @@ function mensDia(){
 // Evento para generar mensaje
 generateMessageBtn.addEventListener('click', generateMessage);
 
-
-
 //mostrar el poema
 // Definir el poema
-const poema = `En el rincón del ayer,
-donde el tiempo quiso arder,
-viven tus ojos serenos,
-y tus suspiros eternos.
-
-Eres un eco en mi mente,
-un latido persistente.
-Aunque el tiempo nos desate,
-en mi alma siempre late.`;
-
 // Obtener el elemento donde se insertará el poema
 const poemaElement = document.getElementById('poema');
 
-// Insertar el poema en el contenedor
-poemaElement.innerHTML = poema;
+const poema = `Tu amor es como un sol brillante,<br>que ilumina mi vida y me da paz,<br>tus palabras son la melodía,<br>que en mi corazón siempre sonarán.`;
+
+// Verificar si el contenedor existe
+    if (poemaElement) {
+    // Insertar el poema en el contenedor
+    poemaElement.innerHTML = poema;
+    } else {
+    console.error("El elemento con id 'poema' no existe en el documento.");
+    }
+
