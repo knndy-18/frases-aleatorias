@@ -57,7 +57,7 @@ p {
     background-color: #c2185b;
     border: none;
     border-radius: 15px;
-    cursor:pointer;
+    cursor: pointer;
     margin-top: 10px;
 }
 
@@ -140,15 +140,13 @@ p {
 
 /* Contenedor Poema para ti */
 .poema-container {
-    position: relative;
-    top: 30%;
-    left: 20px;
-    transform: translateY(-50%);
+    width: 100%;
+    max-width: 600px; /* Limitar el tamaño del contenedor */
+    margin: 20px auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 220px;
     font-size: 1.1rem;
     color: #333;
 }
@@ -168,27 +166,10 @@ p {
 
 /* Media Queries */
 
-/* Responsividad para pantallas pequeñas */
-@media (max-width: 768px) {
-    .music-container {
-        width: 90%; /* Ajusta el ancho en pantallas pequeñas */
-        padding: 15px;
-    }
-
-    .music-container h3 {
-        font-size: 1.6rem;
-    }
-
-    .music-container ul li {
-        font-size: 1rem;
-    }
-}
-
-/* Pantallas pequeñas (móviles) */
+/* Responsividad para pantallas pequeñas y móviles */
 @media screen and (max-width: 768px) {
     .container {
         max-width: 90%;
-        margin: 20px auto;
     }
 
     h1 {
@@ -207,38 +188,30 @@ p {
         padding: 15px;
     }
 
-    /* Poema debajo de la encuesta */
     .poema-container {
-        position: relative;
-        width: 100%;
-        left: 0;
-        transform: none;
-        margin-top: 20px;
-    }
-
-    /* Barra lateral se oculta en móviles */
-    .sidebar {
-        display: none;
-    }
-
-    /* Música recomendada debajo de todo */
-    .music-recommendation {
-        margin-top: 20px;
+        width: 100%; /* Ajustar al ancho completo */
+        margin: 20px auto; /* Centrar el contenedor */
         padding: 15px;
-        background-color: #e1f5fe;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        font-size: 1rem;
     }
 }
 
-/* Pantallas medianas (tabletas) */
+/* Ajustes para pantallas horizontales de móvil */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .container {
+        max-width: 95%;
+    }
 
-/*parte 2*/
-/* Ajustes específicos para pantallas pequeñas y horizontales */
+    .poema-container {
+        width: 100%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+}
+
+/* Ajustes para tabletas */
 @media screen and (max-width: 1024px) {
     .container {
-        max-width: 90%; /* Aseguramos que no ocupe demasiado espacio */
+        max-width: 80%;
     }
 
     h1 {
@@ -250,39 +223,8 @@ p {
     }
 
     .poema-container {
-        width: 100%; /* El contenedor ocupa el ancho completo */
-        position: relative; /* Evitamos posición absoluta */
-        margin: 20px auto; /* Lo centramos con auto */
-        left: 0;
-        top: auto; /* Desactivamos cualquier posición que pueda interferir */
-        transform: none; /* Evitamos transformaciones */
-    }
-}
-
-/* Ajustes para móviles horizontales (pantallas pequeñas en horizontal) */
-@media screen and (max-width: 768px) and (orientation: landscape) {
-    .container {
-        max-width: 95%;
-    }
-
-    .poema-container {
-        width: 100%; /* Aseguramos que no sobrepase el contenedor */
-        position: relative; /* Cambiamos a posición relativa */
-        margin: 20px auto; /* Centramos y damos espacio */
-        left: 0;
-        top: auto;
-        transform: none; /* Eliminamos transformaciones */
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    .survey select, .survey button, .dia button {
-        font-size: 0.9rem;
-    }
-
-    .message-area {
-        padding: 15px;
+        width: 100%; /* Ancho completo */
+        margin: 20px auto; /* Centrado */
+        padding: 20px;
     }
 }
