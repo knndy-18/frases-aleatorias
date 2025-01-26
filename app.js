@@ -450,15 +450,9 @@ function mensDia(){
     // Mostrar el mensaje en el área correspondiente
     messageOutput.textContent = random.text;
 
-  
-
 }
 
-// Evento para generar mensaje
-generateMessageBtn.addEventListener('click', generateMessage);
-
 //mostrar el poema
-// Definir el poema
 // Obtener el elemento donde se insertará el poema
 const poemaElement = document.getElementById('poema');
 
