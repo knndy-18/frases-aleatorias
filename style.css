@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Variables de colores */
 :root {
     --primary-color: #d81b60;
@@ -10,11 +13,18 @@
     --message-bg-color: #ffe4e1;
     --music-bg-color: #f0f8ff;
     --poem-bg-color: #f879bf6a;
+
+    /* Variables de fuentes */
+    --font-main: "Poppins", serif;/* Fuente principal */
+    --font-title: "Great Vibes", serif; /* Fuente para títulos */
+    --font-body: "Poppins", serif; /* Fuente para textos generales */
+    --font-button: "Poppins", serif; /* Fuente para botones */
+    --font-poem: "Italianno", serif; /* Fuente para poemas */
 }
 
 /* Configuración básica */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font-main);
     background: linear-gradient(to bottom right, var(--secondary-color), var(--secondary-gradient));
     color: var(--text-color);
     text-align: center;
@@ -34,17 +44,20 @@ body {
 /* Títulos y texto */
 h1 {
     color: var(--primary-color);
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-family: var(--font-title);
 }
 
 p {
     font-size: 1.2rem;
+    font-family: var(--font-body);
 }
 
 /* Encuesta */
 .survey select {
     padding: 10px;
     font-size: 1rem;
+    font-family: var(--font-body);
     border-radius: 15px;
     border: 1px solid var(--border-color);
 }
@@ -52,6 +65,7 @@ p {
 .survey button {
     padding: 10px 20px;
     font-size: 1rem;
+    font-family: var(--font-button);
     color: #fff;
     background-color: var(--primary-color);
     border: none;
@@ -67,6 +81,7 @@ p {
 .dia button {
     padding: 10px 20px;
     font-size: 1.5rem;
+    font-family: var(--font-button);
     color: #fff;
     background-color: var(--primary-hover-color);
     border: none;
@@ -87,6 +102,7 @@ p {
 #messageOutput {
     font-size: 1.2rem;
     color: var(--text-color);
+    font-family: var(--font-body);
 }
 
 /* Botón "Otro mensaje" */
@@ -94,6 +110,7 @@ p {
     margin-top: 15px;
     padding: 10px 20px;
     font-size: 1rem;
+    font-family: var(--font-button);
     color: #fff;
     background-color: var(--primary-hover-color);
     border: none;
@@ -127,29 +144,50 @@ p {
 .music-container h3 {
     color: var(--primary-color);
     font-size: 1.8rem;
+    font-family: var(--font-title);
     margin-bottom: 15px;
+}
+
+h5{
+    margin: 0;
+    padding: 0;
 }
 
 .music-container ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10%;
     margin: 0;
+    padding: 5%;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-between;
+
 }
 
 .music-container ul li {
     font-size: 1.2rem;
     color: var(--text-color);
+    font-family: var(--font-body);
     margin-bottom: 10px;
+    
 }
 
 .music-container ul li a {
+    
     color: var(--primary-hover-color);
+    background-color: #ecdbe2;
+    border-radius: 10px;
+    padding: 5px;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-family:var(--font-button) ;
+    
 }
 
 .music-container ul li a:hover {
     color: var(--primary-hover-color);
+    
 }
 
 /* Contenedor Poema para ti */
@@ -161,6 +199,7 @@ p {
     width: 220px;
     font-size: 1.1rem;
     color: var(--text-color);
+    font-family: var(--font-poem);
     margin: 0 auto;
     position: relative;
 }
@@ -169,6 +208,7 @@ p {
     color: var(--primary-color);
     font-size: 1.8rem;
     text-align: center;
+    font-family: var(--font-title);
 }
 
 .poema-container p {
@@ -176,7 +216,12 @@ p {
     color: #555;
     text-align: center;
     line-height: 1.5;
+    font-family: var(--font-poem);
 }
+
+
+/* Media Queries */
+/* (Mantienen las mismas fuentes y configuraciones) */
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -213,7 +258,7 @@ p {
     }
 
     h1 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
 
     .survey select, .survey button, .dia button {
