@@ -2,8 +2,17 @@
 const emotionSelect = document.getElementById('emotionSelect');
 const generateMessageBtn = document.getElementById('generateMessage');
 const messageOutput = document.getElementById('messageOutput');
-const newMessageBtn = document.getElementById('newMessage');
 const animationsContainer = document.querySelector('.animations-container');
+const poemaElement = document.getElementById('poema');
+
+
+//contenido del poema
+
+const poema = `Tu belleza no está solo en tu mirar,
+sino en la fuerza que llevas dentro.
+Eres un jardín en primavera,
+donde mis sentimientos encuentran aliento.`;
+
 
 // Listas de mensajes con emojis y animaciones
 const messages = {
@@ -439,8 +448,6 @@ function generateMessage() {
     // Mostrar el mensaje en el área correspondiente
     messageOutput.textContent = randomMessage.text;
 
-    // Mostrar el botón "Otro mensaje"
-    newMessageBtn.classList.remove('hidden');
 }
 function mensDia(){
     let mensaje = document.getElementById('mensajeDia').value;
@@ -453,23 +460,22 @@ function mensDia(){
     // Mostrar el mensaje en el área correspondiente
     messageOutput.textContent = random.text;
 
-    // Mostrar el botón "Otro mensaje"
-    newMessageBtn.classList.remove('hidden');
+  
 
 }
 
 // Evento para generar mensaje
 generateMessageBtn.addEventListener('click', generateMessage);
 
-// Evento para otro mensaje
-newMessageBtn.addEventListener('click', generateMessage);
-
 //mostrar el poema
 // Definir el poema
-const poema = `Tu amor es como un sol brillante,que ilumina mi vida y me da paz,tus palabras son la melodía,que en mi corazón siempre sonarán.`;
-
 // Obtener el elemento donde se insertará el poema
-const poemaElement = document.getElementById('poema');
 
-// Insertar el poema en el contenedor
-poemaElement.innerHTML = poema;
+// Verificar si el contenedor existe
+    if (poemaElement) {
+    // Insertar el poema en el contenedor
+    poemaElement.innerHTML = poema;
+    } else {
+    console.error("El elemento con id 'poema' no existe en el documento.");
+    }
+
