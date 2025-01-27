@@ -1,8 +1,22 @@
+/* Variables de colores */
+:root {
+    --primary-color: #d81b60;
+    --primary-hover-color: #c2185b;
+    --secondary-color: #f8cdda;
+    --secondary-gradient: #1fc8db;
+    --text-color: #333;
+    --border-color: #ccc;
+    --background-color: #fff;
+    --message-bg-color: #ffe4e1;
+    --music-bg-color: #f0f8ff;
+    --poem-bg-color: #f879bf6a;
+}
+
 /* Configuración básica */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom right, #f8cdda, #1fc8db);
-    color: #333;
+    background: linear-gradient(to bottom right, var(--secondary-color), var(--secondary-gradient));
+    color: var(--text-color);
     text-align: center;
     margin: 0;
     padding: 0;
@@ -12,14 +26,14 @@ body {
     margin: 50px auto;
     max-width: 600px;
     padding: 20px;
-    background: #fff;
+    background: var(--background-color);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Títulos y texto */
 h1 {
-    color: #d81b60;
+    color: var(--primary-color);
     font-size: 2.5rem;
 }
 
@@ -32,14 +46,14 @@ p {
     padding: 10px;
     font-size: 1rem;
     border-radius: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
 }
 
 .survey button {
     padding: 10px 20px;
     font-size: 1rem;
     color: #fff;
-    background-color: #d81b60;
+    background-color: var(--primary-color);
     border: none;
     border-radius: 15px;
     cursor: pointer;
@@ -47,17 +61,17 @@ p {
 }
 
 .survey button:hover {
-    background-color: #c2185b;
+    background-color: var(--primary-hover-color);
 }
 
 .dia button {
     padding: 10px 20px;
     font-size: 1.5rem;
     color: #fff;
-    background-color: #c2185b;
+    background-color: var(--primary-hover-color);
     border: none;
     border-radius: 15px;
-    cursor:pointer;
+    cursor: pointer;
     margin-top: 10px;
 }
 
@@ -65,14 +79,14 @@ p {
 .message-area {
     margin-top: 20px;
     padding: 20px;
-    border: 2px dashed #d81b60;
+    border: 2px dashed var(--primary-color);
     border-radius: 10px;
-    background-color: #ffe4e1;
+    background-color: var(--message-bg-color);
 }
 
 #messageOutput {
     font-size: 1.2rem;
-    color: #333;
+    color: var(--text-color);
 }
 
 /* Botón "Otro mensaje" */
@@ -81,14 +95,14 @@ p {
     padding: 10px 20px;
     font-size: 1rem;
     color: #fff;
-    background-color: #1e88e5;
+    background-color: var(--primary-hover-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 #newMessage:hover {
-    background-color: #1565c0;
+    background-color: var(--primary-hover-color);
 }
 
 /* Elementos ocultos */
@@ -100,7 +114,7 @@ p {
 .music-container {
     margin-top: 30px;
     padding: 20px;
-    background-color: #f0f8ff;
+    background-color: var(--music-bg-color);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -111,7 +125,7 @@ p {
 }
 
 .music-container h3 {
-    color: #d81b60;
+    color: var(--primary-color);
     font-size: 1.8rem;
     margin-bottom: 15px;
 }
@@ -124,35 +138,35 @@ p {
 
 .music-container ul li {
     font-size: 1.2rem;
-    color: #333;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
 .music-container ul li a {
-    color: #1e88e5;
+    color: var(--primary-hover-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .music-container ul li a:hover {
-    color: #1565c0;
+    color: var(--primary-hover-color);
 }
 
 /* Contenedor Poema para ti */
 .poema-container {
-    background-color: #f879bf6a;
+    background-color: var(--poem-bg-color);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 220px;
     font-size: 1.1rem;
-    color: #333;
+    color: var(--text-color);
     margin: 0 auto;
     position: relative;
 }
 
 .poema-container h2 {
-    color: #d81b60;
+    color: var(--primary-color);
     font-size: 1.8rem;
     text-align: center;
 }
@@ -165,11 +179,9 @@ p {
 }
 
 /* Media Queries */
-
-/* Responsividad para pantallas pequeñas */
 @media (max-width: 768px) {
     .music-container {
-        width: 90%; /* Ajusta el ancho en pantallas pequeñas */
+        width: 90%;
         padding: 15px;
     }
 
@@ -181,13 +193,11 @@ p {
         font-size: 0.7rem;
     }
 
-    /* Poema para ti en pantallas pequeñas */
     .poema-container {
-        width: 90%; /* Ajustamos para que ocupe más espacio en pantallas pequeñas */
+        width: 90%;
         margin-top: 20px;
     }
 
-    /* Ajuste de fuente en pantalla pequeña */
     .poema-container h2 {
         font-size: 1.6rem;
     }
@@ -197,7 +207,6 @@ p {
     }
 }
 
-/* Pantallas pequeñas (móviles en horizontal) */
 @media screen and (max-width: 1024px) {
     .container {
         max-width: 90%;
@@ -215,7 +224,6 @@ p {
         padding: 15px;
     }
 
-    /* Poema debajo de la encuesta */
     .poema-container {
         position: relative;
         width: 90%;
@@ -225,9 +233,8 @@ p {
     }
 }
 
-/* Pantallas medianas (tabletas) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .poema-container {
-        width: 250px; /* Ajustamos el ancho del contenedor */
+        width: 250px;
     }
 }
