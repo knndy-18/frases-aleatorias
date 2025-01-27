@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-82TKWN9T3S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-82TKWN9T3S');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Web de Frases Aleatorias</title>
@@ -34,7 +25,7 @@
             </select>
             <button id="generateMessage">Generar mensaje</button>
         </div>
-
+        
         <div class="dia">
             <button onclick="mensDia();" id="mensajeDia" value="mensajeDia">Frase del dia</button>
         </div>
@@ -42,10 +33,10 @@
         <!-- Área de mensaje -->
         <div class="message-area">
             <p id="messageOutput"></p>
+            <button id="newMessage" class="hidden">Otro mensaje</button>
         </div>
-        
+        <h1>-----------------</h1>
         <!-- Contenedor Poema para ti (Debajo de la encuesta) -->
-            <h1>------------------------</h1>
         <div class="poema-container">
             <h2>Poema para ti</h2>
             <p id="poema"></p> <!-- Aquí se insertará el poema -->
