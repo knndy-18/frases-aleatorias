@@ -574,24 +574,123 @@ const messages = {
         { text: "Sé que esto pasará, y cuando lo haga, estaré aquí para abrazarte. 🫂", emoji: "🫂" },
         { text: "Tómate tu tiempo para calmarte, yo estaré aquí esperando con paciencia. 💖", emoji: "💖" },
         { text: "Entiendo que a veces las cosas no son fáciles, pero juntos siempre lo conseguimos. 💪", emoji: "💪" },
-        { text: "Eres tan valiente, y sé que todo lo que sientes hoy pronto será solo un recuerdo. 💫", emoji: "💫" },
-        { text: "Te quiero con todo mi corazón, y estaré aquí mientras superas todo esto. ❤️", emoji: "❤️" },
-        { text: "No importa lo que sientas ahora, siempre encontraré una forma de hacerte sonreír. 😊", emoji: "😊" },
-        { text: "Lo que más deseo es verte en paz, y haré lo posible por ayudarte a encontrarla. 🕊️", emoji: "🕊️" },
-        { text: "A veces nos sentimos abrumados, pero eso no cambia cuánto te amo. 💖", emoji: "💖" },
-        { text: "Siempre estaré aquí para escucharte, apoyarte y hacerte sentir mejor. 🫶", emoji: "🫶" },
-        { text: "Nada ni nadie puede cambiar lo que siento por ti. Siempre estaré aquí para ti. 💖", emoji: "💖" },
-        { text: "Lo que más quiero es verte bien, y lo lograremos juntos. 💕", emoji: "💕" },
-        { text: "A veces las cosas se complican, pero mi amor por ti es lo más constante. 💖", emoji: "💖" },
-        { text: "Entiendo que estés pasando por un momento difícil, pero quiero que sepas que te amo profundamente. 💖", emoji: "💖" },
-        { text: "Sé que las palabras no pueden solucionar todo, pero mi amor siempre será tu refugio. 🫂", emoji: "🫂" },
-        { text: "Te amo, y eso es lo que más importa en este momento. ❤️", emoji: "❤️" },
-        { text: "Mi mayor deseo es verte en paz, y haré lo que sea para que eso pase. 🌿", emoji: "🌿" },
-        { text: "Aunque las cosas no sean fáciles, lo que más importa es que siempre estaré a tu lado. 🫶", emoji: "🫶" },
-        { text: "Sé que lo que sientes es real, y estoy aquí para ayudarte a superarlo. 💖", emoji: "💖" },
-        { text: "A veces la vida nos pone obstáculos, pero juntos podemos superarlos. 💪", emoji: "💪" },
-        { text: "Te amo, y eso es lo que me da fuerza para acompañarte en todo. 💖", emoji: "💖" },
-        { text: "Lo importante es que siempre nos tengamos el uno al otro. 💕", emoji: "💕" }
+         { text: "Nivel de furia: Tráfico a las 8 AM con GPS que dice '5 minutos' 🚗💢", emoji: "🚗" },
+        { text: "¡Enojómetro al máximo: Wi-Fi lento en pleno maratón de Netflix! 📺", emoji: "📺" },
+        { text: "Cólera nivel: 'Contraseña incorrecta' en tercer intento 🔑", emoji: "🔑" },
+        { text: "¡Alerta! Burbujas de ira surgiendo: Vecino con taladro a las 7 AM 🔨", emoji: "🔨" },
+        { text: "Furia tipo: '¿Dónde dejé las llaves?' en lunes sin café 🔎", emoji: "🔎" },
+        
+        // TECNOLOGÍA AVANZADA (20 mensajes)
+        { text: "¡Error 666: Dispositivo autocargando rabia en lugar de batería! 🔋", emoji: "🔋" },
+        { text: "Algoritmo de irritación actualizado a versión 10.0 💻🔥", emoji: "💻" },
+        { text: "¡Sistema de enfriamiento emocional colapsado! ❄️💢", emoji: "❄️" },
+        { text: "Navegando en modo incógnito: Ira invisible pero potente 🕶️", emoji: "🕶️" },
+        { text: "¡Criptominería de paciencia agotada! ⛏️💎", emoji: "⛏️" },
+        
+        // NATURALEZA EXTREMA (20 mensajes)
+        { text: "¡Erupción volcánica emocional en curso! 🌋🧯", emoji: "🧯" },
+        { text: "Alerta de tsunami: Olas de irritación nivel Maldives 🌊", emoji: "🌊" },
+        { text: "Huracán de placeres rotos categoría 5 🌀", emoji: "🌀" },
+        { text: "Terremoto interno: Fallas de paciencia activas 🏔️", emoji: "🏔️" },
+        { text: "Incendio forestal de opiniones no solicitadas 🔥", emoji: "🔥" },
+        
+        // PROFESIONES (20 mensajes)
+        { text: "¡Enojómetro profesional: Chef quemando soufflé en MasterChef! 👩🍳", emoji: "👩🍳" },
+        { text: "Furia tipo: Astronauta que olvidó llave inglesa en espacio 🚀", emoji: "🚀" },
+        { text: "Nivel bombero: Apagando 100 fuegos simultáneos sin agua 🧯", emoji: "🧯" },
+        { text: "¡Cólera de profesor viendo meme en clase importante! 🧑🏫", emoji: "🧑🏫" },
+        { text: "Estrés laboral: DJ con vinilo rayado en pleno drop 🎧", emoji: "🎧" },
+        
+        // FENÓMENOS VIRALES (20 mensajes)
+        { text: "¡Viralizando ira: Challenge de ojos inyectados a 10k RT 👀", emoji: "👀" },
+        { text: "TikTok de furia: Baile con pasos de stomp challenge 👟", emoji: "👟" },
+        { text: "Meme del día: Gato gruñendo con subtítulo 'Yo hoy' 😾", emoji: "😾" },
+        { text: "Trending topic: #AyudaMiEnojoTieneHashtag 🔥", emoji: "🔥" },
+        { text: "Reel de furia: Time-lapse de cara enrojeciendo en 10s 🎥", emoji: "🎥" },
+        
+        // EJEMPLOS ADICIONALES (completando 100)
+        { text: "¡Furia vintage: Máquina de escribir sin papel en plena inspiración! ⌨️", emoji: "⌨️" },
+        { text: "Enojasaurio Rex detectado en parque jurásico emocional 🦖", emoji: "🦖" },
+        { text: "Alerta AMBER: Peluche favorito desaparecido en lavadora 🧸", emoji: "🧸" },
+        { text: "Nivel cósmico: Agujero negro tragando toda tu paciencia 🌌", emoji: "🌌" },
+        { text: "¡Furia gourmet: Sushi cayéndose del palillo ante influencers 🍣", emoji: "🍣" },
+        { text: "Código rojo: Helado cayendo del cono en día de 40°C 🍦", emoji: "🍦" },
+        { text: "¡Erupción de lava: Grupo de WhatsApp familiar activo a las 6 AM 📱", emoji: "📱" },
+        { text: "Furia acústica: Vecino cantando reggaetón desafinado a todo volumen 🎤", emoji: "🎤" },
+        { text: "¡Algoritmo de ira detectando patrones de estupidez recurrente! 🤖", emoji: "🤖" },
+        { text: "Nivel ninja: Esquivando preguntas incómodas en reunión familiar 🥷", emoji: "🥷" },
+        // COMIDA (30 mensajes)
+        { text: "Tu furia podría freír un huevo en el Sahara sin sartén 🍳🔥", emoji: "🍳" },
+        { text: "¡Alerta! Nivel de picante: Jalapeño nuclear 🌶️☢️", emoji: "🌶️" },
+        { text: "Enviando helado de menta para apagar el fuego interno 🍦❄️", emoji: "❄️" },
+        { text: "Hoy tu enojo está más caliente que café recién hervido ☕", emoji: "☕" },
+        { text: "Tu ira hornea pan sin levadura... ¡y queda perfecto! 🥖", emoji: "🥖" },
+        { text: "¡Cuidado! Mirada capaz de derretir queso a 10 metros 🧀", emoji: "🧀" },
+        { text: "Hoy hasta las galletas saladas piden tregua 🥨", emoji: "🥨" },
+        { text: "Nivel de acidez: Limón exprimido por Hulk 🍋💪", emoji: "🍋" },
+        { text: "Tu enojo podría cocinar un asado en segundos 🥩", emoji: "🥩" },
+        { text: "¡Sistema de enfriamiento: Batido de fresa con extra de hielo! 🍓", emoji: "🍓" },
+    
+        // ANIMALES (30 mensajes)
+        { text: "¡Rugido nivel leona protegiendo a sus cachorros! 🦁", emoji: "🦁" },
+        { text: "Mandando manada de koalas abrazadores para calmarte 🐨", emoji: "🐨" },
+        { text: "Nivel de ira: Hipopótamo en día de calor extremo 🦛", emoji: "🦛" },
+        { text: "¡Cuidado! Mirada de águila detectando estupideces a 5km 🦅", emoji: "🦅" },
+        { text: "Tu enojo tiene la elegancia de un gato tirando vasos 🐈⬛", emoji: "🐈⬛" },
+        { text: "Resonancia emocional: Murciélago en modo sónar 🦇", emoji: "🦇" },
+        { text: "Furia nivel pulpo golpeando submarino 🐙", emoji: "🐙" },
+        { text: "¡Alerta! Colmillos de vampiro detectando injusticias 🧛♀️", emoji: "🧛♀️" },
+        { text: "Mandando escuadrón de perritos salchicha distractores 🌭", emoji: "🌭" },
+        { text: "Tu ira tiene la potencia de 100 abejas reinas enfadadas 🐝", emoji: "🐝" },
+    
+        // TECNOLOGÍA (30 mensajes)
+        { text: "¡Sistema operativo emocional en modo overclocking! 💻🔥", emoji: "💻" },
+        { text: "Alerta: Temperatura interna alcanzando 5000°C ♨️", emoji: "♨️" },
+        { text: "Reiniciando sistema con abrazos de oso polar ❄️", emoji: "❄️" },
+        { text: "¡CPU emocional al 1000% - Necesitas un break! ⏸️", emoji: "⏸️" },
+        { text: "Antivirus anti-irritantes descargando... 75% 🛡️", emoji: "🛡️" },
+        { text: "Error 666: Demonio de la ira detectado 😈", emoji: "😈" },
+        { text: "Actualización de paciencia v3.0 instalándose... ⏳", emoji: "⏳" },
+        { text: "¡Cortafuegos emocional activado contra estupideces! 🔥", emoji: "🔥" },
+        { text: "Memoria RAM llena de razones para enojarse 💾", emoji: "💾" },
+        { text: "Modo avión activado para desconectar de lo que te molesta ✈️", emoji: "✈️" },
+    
+        // HIPERBOLAS (30 mensajes)
+        { text: "¡Tu furia podría fundir el núcleo de la Tierra! 🌍🔥", emoji: "🌍" },
+        { text: "Nivel de poder: Tsunami de lava con café sin azúcar 🌋", emoji: "🌋" },
+        { text: "Mirada capaz de derretir el casco de Iron Man 🦾", emoji: "🦾" },
+        { text: "¡Tu enojo genera suficiente energía para iluminar Tokio! 🗼", emoji: "🗼" },
+        { text: "Alerta: Huracán de plumas irritado nivel 5 🌪️", emoji: "🌪️" },
+        { text: "Resoplido capaz de apagar velas en China 🕯️", emoji: "🕯️" },
+        { text: "¡Cuidado! Tu ira está creando agujeros negros emocionales ⚫", emoji: "⚫" },
+        { text: "Nivel de intensidad: Big Bang con retraso de tráfico 💥", emoji: "💥" },
+        { text: "Tu enojo podría ganarle a un dragón en un concurso de gritos 🐉", emoji: "🐉" },
+        { text: "Furia nivel terremoto 9.9 en escala de Richter 🌎", emoji: "🌎" },
+    
+        // CULTURA POP (30 mensajes)
+        { text: "¡Eres más temible que Godzilla en día de tráfico! 🦖", emoji: "🦖" },
+        { text: "Nivel de ira: Hulk cuando le cancelan Netflix 🟢", emoji: "🟢" },
+        { text: "¡Cuidado! Actitud tipo Daenerys quemando Desembarco 🔥", emoji: "🔥" },
+        { text: "Tu enojo tiene más capas que cebolla de Shrek 🧅", emoji: "🧅" },
+        { text: "Furia nivel Joker organizando caos en Gotham 🤡", emoji: "🤡" },
+        { text: "¡Eres más explosiva que la Motherboard en Stranger Things! 🧨", emoji: "🧨" },
+        { text: "Mirada más penetrante que Arya Stark con aguja ⚔️", emoji: "⚔️" },
+        { text: "Nivel de poder: Capitana Marvel destruyendo naves alien 🚀", emoji: "🚀" },
+        { text: "¡Tu ira haría llorar a Darth Vader! 🌌", emoji: "🌌" },
+        { text: "Eres más intensa que escena de Kill Bill con sable láser ⚔️", emoji: "⚔️" }
+        
+        // EJEMPLOS ADICIONALES PARA COMPLETAR 150:
+        ,
+        { text: "¡Tu enojo podría ganarle a Thor en un concurso de truenos! ⚡", emoji: "⚡" },
+        { text: "Mandando flota de pingüinos con trajes anti-enojo 🐧", emoji: "🐧" },
+        { text: "Nivel de seriedad: Juez Judy escuchando excusas tontas 👩⚖️", emoji: "👩⚖️" },
+        { text: "Tu furia tiene más voltaje que batería de Tesla 🔋", emoji: "🔋" },
+        { text: "¡Alerta! Ojos lanzando dagas estilo Elektra 🔪", emoji: "🔪" },
+        { text: "Enviando equipo de demolición de malos rollos 🚧", emoji: "🚧" },
+        { text: "Tu ira es más precisa que francotirador de John Wick 🔫", emoji: "🔫" },
+        { text: "Nivel de explosividad: Fuegos artificiales en lata 🧨", emoji: "🧨" },
+        { text: "¡Cuidado! Suspiros capaces de apagar velas de cumpleaños 🎂", emoji: "🎂" },
+        { text: "Mandando paracaídas de algodón de azúcar para suavizar el día 🍬", emoji: "🍬" }
 
     ]
 };
